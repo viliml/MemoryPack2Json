@@ -48,5 +48,5 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: MemoryPack2Json-${{ matrix.configuration }}-{{ matrix.rid }}
-        path: bin\${{ matrix.configuration }}\net8.0\{{ matrix.rid }}\publish
+        name: MemoryPack2Json-${{ matrix.configuration }}-${{ matrix.rid }}
+        path: bin\${{ matrix.configuration }}\net8.0\${{ matrix.rid }}\publish
